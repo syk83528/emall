@@ -1,20 +1,16 @@
-package com.ipaozha.emall.controller;
+package com.ipaozha.emall.controller.system;
 
 import com.ipaozha.emall.model.AbcModel;
-import org.apache.commons.io.FileUtils;
-import org.apache.commons.logging.LogFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.File;
 import java.io.IOException;
-import java.net.SocketException;
 import java.util.UUID;
 
 @Controller

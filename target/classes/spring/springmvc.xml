@@ -24,8 +24,9 @@
     <mvc:annotation-driven />
 
     <!-- 静态资源处理， css， js， imgs -->
-    <mvc:resources mapping="/css/" location="/css/**" />
-    <mvc:resources mapping="/js/" location="/js/**" />
+    <mvc:resources mapping="/css/**" location="/css/" />
+    <mvc:resources mapping="/js/**" location="/js/" />
+    <mvc:resources mapping="/images/**" location="/images/" />
 
     <!-- 配置ViewResolver。 可以用多个ViewResolver。 使用order属性排序。 InternalResourceViewResolver放在最后。 -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
